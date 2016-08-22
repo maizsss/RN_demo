@@ -9,7 +9,6 @@ import {
     Alert,
 } from 'react-native';
 import App from './src/containers/App.js';
-import codePush from 'react-native-code-push';
 
 class easystart extends Component {
     constructor(props) {
@@ -24,17 +23,6 @@ class easystart extends Component {
     }
 
     componentDidMount() {
-        // Alert.alert('vertag10');
-        codePush.sync();
-        // codePush.checkForUpdate()
-        // .then( (update) =>{
-        //     if( !update ){
-        //         Alert.alert("app是最新版了");
-        //     }else {
-        //         Alert.alert("有更新哦");
-        //         codePush.sync();
-        //     }
-        // });
     }
 }
 

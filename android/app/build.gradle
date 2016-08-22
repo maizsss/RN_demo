@@ -98,14 +98,6 @@ android {
         }
     }
     
-    signingConfigs {
-        release {
-            storeFile file("../../easy-start-key.keystore")
-            storePassword "486952"
-            keyAlias "easy-start-alias"
-            keyPassword "486952"
-        }
-    }
     splits {
         abi {
             reset()
@@ -118,7 +110,6 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
